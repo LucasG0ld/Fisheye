@@ -32,25 +32,25 @@ async function init() {
     const filtre = document.getElementById('filtre');
     var filter = filtre.value;
     var userMediaDOM = photographer.medias(filter);
-    /*var userFormDOM = photographer.form();
-    var userResumeDOM = photographer.resume();*/
+    var userFormDOM = photographer.form();
+    /*var userResumeDOM = photographer.resume();*/
     
     //const userLightboxDOM = photographer.lightbox();
     // Afficher le contenu de la classe
     templateHeader.innerHTML += (userHeaderDOM);
     templateMedia.innerHTML += (userMediaDOM);
-    /*templateForm.innerHTML += (userFormDOM);
-    templateResume.innerHTML += (userResumeDOM);*/
+    templateForm.innerHTML += (userFormDOM);
+    /*templateResume.innerHTML += (userResumeDOM);*/
     
     // Initialiser lightboxes
     const idLightbox = "lightbox-content";
     photographer.initLightboxes(idLightbox);
 
     // Initialiser like
-    /*photographer.initLikes();
+    photographer.initLikes();
     
     // Changement de valeur du filtre
-    filtre.addEventListener('change', function() {
+    /*filtre.addEventListener('change', function() {
         filter = filtre.value;
         userMediaDOM = photographer.medias(filter);
         templateMedia.innerHTML = userMediaDOM;

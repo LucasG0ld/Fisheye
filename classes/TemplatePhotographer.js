@@ -52,7 +52,7 @@ class TemplatePhotographer {
     }
 
     // Form DOM
-    /*form() {
+    form() {
         let formTemplate = `<div class="form-header-text"><h2>Contactez-moi</h2>
         <img class="outline" src="assets/icons/close.svg" onclick="closeModal(), keyPress()" tabindex="0" aria-label="Bouton fermer formulaire" />
         </div>
@@ -63,7 +63,7 @@ class TemplatePhotographer {
     }
 
     // Resume DOM
-    resume() {
+    /*resume() {
       let resumeTemplate = `<div><p><span id="totalLikes">${this.totalOfLikes()}</span> <i class="fas fa-heart"></i></p><p>${this.price}€ / jour</p></div>`;
 
       return resumeTemplate;
@@ -163,7 +163,7 @@ class TemplatePhotographer {
     }
 
     // Calcul ajout / supression de like
-    /*initLikes() {
+    initLikes() {
       var that = this;
       this.photos.forEach(function(photo) {
         const heart = document.getElementById(`heart-like-${photo.id}`);
@@ -198,6 +198,6 @@ class TemplatePhotographer {
       })
       return likes;
       
-    }*/
+    }
 
 }
