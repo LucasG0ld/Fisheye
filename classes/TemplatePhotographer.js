@@ -63,11 +63,11 @@ class TemplatePhotographer {
     }
 
     // Resume DOM
-    /*resume() {
+    resume() {
       let resumeTemplate = `<div><p><span id="totalLikes">${this.totalOfLikes()}</span> <i class="fas fa-heart"></i></p><p>${this.price}€ / jour</p></div>`;
 
       return resumeTemplate;
-    }*/
+    }
     
 
     // Boucle par rapport au nombre de medias + filtre
