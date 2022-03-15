@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/photographer.css" rel="stylesheet" type="text/css" />
+  <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Fisheye - photographe </title>
+</head>
+
+<body>
+  <header class="main-header">
+    <a href="index.html"><img src="assets/images/logo.png" class="logo" alt="Logo Fisheye"/></a>
+  </header>
+  <main id="main" class="photographer-main">
+    <section id="photograph_header">
+    </section>
+    <div class="modal-container" id="contact_modal">
+      <div class="modal">
+        <header id="form-header">
+          
+        </header>
+        <form id="photographer-form">
+          <div>
+            <label>Prénom</label>
+            
+            <input class="outline" type="text" id="first" name="first" minlength="2" aria-label="Formulaire champ prénom"/>
+            <span class=" form-text dp-none" id="text-prenom">Veuillez remplir votre prénom</span>
+            <label>Nom</label>
+            
+            <input class="outline" type="text" id="last" name="last" minlength="2" aria-label="Formulaire champ nom"/>
+            <span class=" form-text dp-none" id="text-nom">Veuillez remplir votre nom</span>
+            <label>Email</label>
+            
+            <input class="outline" type="email" id="email" name="email" minlength="2" aria-label="Formulaire champ email"/>
+            <span class=" form-text dp-none" id="text-email">Veuillez remplir votre email</span>
+            <label>Message</label>
+            
+            <textarea class="outline" minlength="2" id="message" aria-label="Formulaire champ message"></textarea>
+            <span class=" form-text dp-none outline" id="text-message">Veuillez entrer un message</span>
+          </div>
+          <button class="contact_button">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <section class="section-padding">
+      <div class="sort-container">
+        <span>Trier par</span>
+        <div class="custom-select">
+          <label>
+            <select id="filtre">
+              <option value="likes">Popularité</option>
+              <option value="date">Date</option>
+              <option value="title">Titre</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+    <section id="photograph_media" class="picture-section">
+    </section>
+    <div class="resume-container" id="resume_likes">
+      
+    </div>
+  </main>
+
+  <div class="lightbox display-none" id="lightbox">
+    <div id="lightbox-content">
+      
+    </div>
+    <button tabindex="0" class="lightbox-close outline" onclick="closeLightbox();"><i class="fas fa-times"></i></button>
+    <button tabindex="0" class="lightbox-prev outline"><i class="fas fa-chevron-left"></i></button>
+    <button tabindex="0" class="lightbox-next outline"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <script src="scripts/utils/contactForm.js"></script>
+  <script src="scripts/utils/Lightbox.js"></script>
+  <script src="classes/TemplatePhotographer.js"></script>
+  <script src="classes/Video.js"></script>
+  <script src="classes/Photo.js"></script>
+  <script src="classes/Factory.js"></script>
+  <script src="scripts/pages/photographer.js"></script>
+</body>
+
+</html>
