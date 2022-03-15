@@ -27,7 +27,7 @@ class TemplatePhotographer {
     }
 
     // Media DOM
-    /*media(media) {
+    media(media) {
       let photographerMediaTemplate = 
       `<article class="picture-container">${Factory.createMedia(media, this.name).display()}
         <div>
@@ -41,7 +41,7 @@ class TemplatePhotographer {
 
     // Lightbox DOM
 
-    lightbox(picture) {
+    /*lightbox(picture) {
       let photographerLightboxTemplate = 
       `<div class="lightbox-container">
         ${Factory.createMedia(picture, this.name).display(true)}
@@ -71,7 +71,7 @@ class TemplatePhotographer {
     
 
     // Boucle par rapport au nombre de medias + filtre
-    /*medias(filter) {
+    medias(filter) {
       let mediasTemplate = ""
       var photos = this.photos.sort(function(photoa, photob) {
         if(photoa[filter] > photob[filter]) {
@@ -84,7 +84,7 @@ class TemplatePhotographer {
         mediasTemplate += this.media(photo);
       });
       return mediasTemplate;
-    }*/
+    }
 
     // Initialiser lightboxes
     /*initLightboxes(idLightbox) {

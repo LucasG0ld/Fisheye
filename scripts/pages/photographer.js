@@ -29,17 +29,17 @@ async function init() {
         // Instancier un nouveau template de photographer
     const photographer = new TemplatePhotographer(photographerById, mediasById)
     const userHeaderDOM = photographer.header();
-    /*const filtre = document.getElementById('filtre');
+    const filtre = document.getElementById('filtre');
     var filter = filtre.value;
     var userMediaDOM = photographer.medias(filter);
-    var userFormDOM = photographer.form();
+    /*var userFormDOM = photographer.form();
     var userResumeDOM = photographer.resume();*/
     
     //const userLightboxDOM = photographer.lightbox();
     // Afficher le contenu de la classe
     templateHeader.innerHTML += (userHeaderDOM);
-    /*templateMedia.innerHTML += (userMediaDOM);
-    templateForm.innerHTML += (userFormDOM);
+    templateMedia.innerHTML += (userMediaDOM);
+    /*templateForm.innerHTML += (userFormDOM);
     templateResume.innerHTML += (userResumeDOM);
     
     // Initialiser lightboxes
