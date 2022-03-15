@@ -40,14 +40,14 @@ async function init() {
     templateHeader.innerHTML += (userHeaderDOM);
     templateMedia.innerHTML += (userMediaDOM);
     /*templateForm.innerHTML += (userFormDOM);
-    templateResume.innerHTML += (userResumeDOM);
+    templateResume.innerHTML += (userResumeDOM);*/
     
     // Initialiser lightboxes
     const idLightbox = "lightbox-content";
     photographer.initLightboxes(idLightbox);
 
     // Initialiser like
-    photographer.initLikes();
+    /*photographer.initLikes();
     
     // Changement de valeur du filtre
     filtre.addEventListener('change', function() {

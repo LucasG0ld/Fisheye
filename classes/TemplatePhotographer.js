@@ -41,7 +41,7 @@ class TemplatePhotographer {
 
     // Lightbox DOM
 
-    /*lightbox(picture) {
+    lightbox(picture) {
       let photographerLightboxTemplate = 
       `<div class="lightbox-container">
         ${Factory.createMedia(picture, this.name).display(true)}
@@ -52,7 +52,7 @@ class TemplatePhotographer {
     }
 
     // Form DOM
-    form() {
+    /*form() {
         let formTemplate = `<div class="form-header-text"><h2>Contactez-moi</h2>
         <img class="outline" src="assets/icons/close.svg" onclick="closeModal(), keyPress()" tabindex="0" aria-label="Bouton fermer formulaire" />
         </div>
@@ -87,7 +87,7 @@ class TemplatePhotographer {
     }
 
     // Initialiser lightboxes
-    /*initLightboxes(idLightbox) {
+    initLightboxes(idLightbox) {
       var lightboxContainer = document.getElementById(idLightbox);
       var currentLightbox = null;
       this.photos.forEach(photo => {
@@ -163,7 +163,7 @@ class TemplatePhotographer {
     }
 
     // Calcul ajout / supression de like
-    initLikes() {
+    /*initLikes() {
       var that = this;
       this.photos.forEach(function(photo) {
         const heart = document.getElementById(`heart-like-${photo.id}`);
