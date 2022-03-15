@@ -192,6 +192,10 @@ class TemplatePhotographer {
 
     // Calcul nombre total like
     totalOfLikes() {
+      /*var likes = this.photos.reduce(function(a, b){
+        return a.likes + b.likes;
+      }, 0);
+      console.log(likes);*/
       var likes = 0;
       this.photos.forEach(function(photo) {
         likes = likes + photo.likes;
